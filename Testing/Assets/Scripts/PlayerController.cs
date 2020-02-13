@@ -16,10 +16,23 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow) == true) { this.transform.position += this.transform.forward * Time.deltaTime * this.moveSpeed; }
-        if (Input.GetKey(KeyCode.DownArrow) == true) { this.transform.position -= this.transform.forward * Time.deltaTime * this.moveSpeed; }
+        if (Input.GetKey(KeyCode.UpArrow) == true)
+        {
+            this.transform.position += this.transform.forward * Time.deltaTime * this.moveSpeed;
+        }
+        if (Input.GetKey(KeyCode.DownArrow) == true)
+        {
+            this.transform.position -= this.transform.forward * Time.deltaTime * this.moveSpeed;
+        }
 
-        if (Input.GetKey(KeyCode.LeftArrow) == true) { this.transform.Rotate(this.transform.up, Time.deltaTime * -this.turnSpeed); }
-        if (Input.GetKey(KeyCode.RightArrow) == true) { this.transform.Rotate(this.transform.up, Time.deltaTime * this.turnSpeed); }
+        if (Input.GetKey(KeyCode.LeftArrow) == true)
+        {
+            this.transform.Rotate -= (this.transform.right, Time.deltaTime * -this.turnSpeed);
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow) == true)
+        {
+            this.transform.Rotate(this.transform.up, Time.deltaTime * this.turnSpeed);
+        }
     }
 }
