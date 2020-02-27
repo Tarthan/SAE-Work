@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f;     //Distance moved (units per second) when user holds the up or down arrow
-    public float turnSpeed = 100f;   //Rotaing speed (degrees per second) when user holds the left or right arrow
+    public float moveSpeed = 5f;        //Distance moved (units per second) when user holds the up or down arrow
+    public float turnSpeed = 100f;       //Rotaing speed (degrees per second) when user holds the left or right arrow
     public float jumpHeight = 5f;       // Upward velocity when user presses spacebar.
-    // Start is called before the first frame update
+                                        // Start is called before the first frame update
+
+        // move speed and turnspeed all increase once the player collects enough exp to level up 
+    public float currentmoveSpeed;
+    public float currentturnSpeed;
+    
+
     void Start()
     {
         
