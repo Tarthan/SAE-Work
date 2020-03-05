@@ -1,0 +1,13 @@
+Coin Pseudo Code
+
+1. Create ClassField
+	- SpinSpeed = 100 (Float)
+2. Create Update Method 
+	- Rotate 0 X Axis, 0 Y Axis, Z Axis * SpinSpeed
+3.	Create Collider
+	- If 
+		player collides with gameobject then destroy gameobject
+		player gains xp when game object is destroyed
+	End if
+	
+

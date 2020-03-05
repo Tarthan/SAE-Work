@@ -4,7 +4,8 @@ using UnityEngine;
 
 
 
-public class MovingWallScript : MonoBehaviour
+
+public class MovingPlatform : MonoBehaviour
 {
     public enum Axis { X_AXIS, Y_AXIS, Z_AXIS }
 
